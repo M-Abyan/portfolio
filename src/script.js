@@ -1,8 +1,10 @@
-const boxShadowClass = document.querySelectorAll(".box-shadow");
+const boxShadowClass = document.querySelectorAll(".box-shadow-1");
+const boxShadowClass2 = document.querySelectorAll(".box-shadow-2");
 const body = document.querySelector("body");
-const monsters = document.querySelectorAll("input[name='monster']")
+const color = document.querySelectorAll("input[name='color']")
 const colorPicker = document.querySelector(".color-picker")
 const colorToggle = document.querySelector(".color-toggle")
+const logoBgColor = document.querySelector(".logo-bg-color")
 
 
 colorToggle.addEventListener('click', function () {
@@ -11,11 +13,12 @@ colorToggle.addEventListener('click', function () {
 })
 
 
-monsters.forEach(m => {
-    m.addEventListener('change', function (e) {
+color.forEach(e => {
+    e.addEventListener('change', function (e) {
         console.log(e.target.value)
-        shadow(e.target.getAttribute('data-shadow'))
+        changeBoxShadow(e.target.getAttribute('data-shadow'))
         body.style.backgroundColor = this.value;
+        logoBgColor.style.backgroundColor = this.value;
     })
 })
 
@@ -23,21 +26,11 @@ monsters.forEach(m => {
 
 
 
-function shadow(color) {
+function changeBoxShadow(color) {
     boxShadowClass.forEach(e => {
         e.style.boxShadow = `6px 6px ${color}`;
     })    
+    boxShadowClass2.forEach(e => {
+        e.style.boxShadow = `3px 3px ${color}`;
+    })
 }
-
-
-
-// inputColor.forEach(element => {
-//     element.addEventListener("click", function (e)  {
-
-//         console.log(this.getAttribute('data-color'))
-//         console.log(element)
-//         // console.log(e.target.disable)
-//         body.style.backgroundColor = this.getAttribute('data-color');
-//         shadow(this.getAttribute('data-shadow'));
-//     })
-// });

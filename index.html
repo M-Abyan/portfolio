@@ -1,20 +1,21 @@
 <!doctype html>
-<html>
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
     <!--Google Font-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Playpen+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Playpen+Sans:wght@500;600;700;800&display=swap" rel="stylesheet">
     <!--Google Font-->
     <link href="dist/output.css" rel="stylesheet">
 </head>
 <body class="font-primary">
     <div class="md:px-20 lg:px-64 fixed w-full flex justify-between
-    border-b-[3px] border-black bg-white">
-        <div class="bg-purple-400 border-r-[3px] border-black 
-        md:border-x-[3px] flex px-2 items-center text-white">Yan</div>
+    border-b-[3px] border-nav bg-white">
+        <div class="logo-bg-color border-r-[3px] border-nav 
+        md:border-x-[3px] flex px-2 items-center ">Yan</div>
         <div class="p-2">
             <div>
                 <a href="">Home</a>
@@ -25,7 +26,7 @@
     </div>
     <div class="flex flex-col items-center gap-16 justify-center h-dvh text-center">
         <div class="flex flex-col items-stretch w-[80%] lg:w-[60%] xl:w-1/2 justify-centers gap-10">
-            <div class="border-[3px] bg-white border-black relative box-shadow p-10 w-full">
+            <div class="border-[3px] bg-white border-black relative box-shadow-1 p-10 w-full">
                 <div class="absolute
                 top-[-20px] left-[-20px]
                 md:top-[-28px] md:left-[-30px] border-[3px] 
@@ -34,7 +35,7 @@
                 <p class="p-1 md:py-[10px] mr-1 bg-emerald-400 border-x-2 border-black">Hey!</p>
                 I'm Abyan
                 </div>
-                <div class="absolute shadow-[3px_3px] bottom-[-12px] 
+                <div class="absolute box-shadow-2 bottom-[-12px] 
                 right-[-10px] border-[3px] border-black px-1 py-[2px] 
                 bg-amber-400">
                     <svg xmlns="http://www.w3.org/2000/svg" 
@@ -53,7 +54,7 @@
             </div>
             <div class="grid grid-cols-1 md:grid-cols-2 justify-center items-center gap-10">
                 <a href="#" class="grid grid-cols-[1fr,2fr] text-sm md:text-lg 
-                border-[3px] border-black box-shadow bg-white">
+                border-[3px] border-black box-shadow-1 bg-white">
                     <div class="bg-pink-400 flex items-center justify-center border-black 
                     border-r-[3px]">
                         <svg xmlns="http://www.w3.org/2000/svg" 
@@ -71,7 +72,7 @@
                     <p class="underline-offset-2 decoration-2 p-2 underline">Instagram</p>
                 </a>
                 <a href="#" class="grid grid-cols-[1fr,2fr] text-sm md:text-lg 
-                border-[3px] border-black box-shadow bg-white">
+                border-[3px] border-black box-shadow-1 bg-white">
                     <div class="bg-cyan-400 flex items-center justify-center border-black 
                     border-r-[3px]">
                         <svg xmlns="http://www.w3.org/2000/svg" 
@@ -91,7 +92,7 @@
         
             <div class=" absolute bottom-3 
                 right-3 color-toggle p-1 border-[3px] 
-                border-black shadow-[3px_3px] bg-white">
+                border-black box-shadow-2 bg-white">
                 <svg xmlns="http://www.w3.org/2000/svg" 
                 class="icon icon-tabler icon-tabler-tools" 
                 width="24" height="24" viewBox="0 0 24 24" 
@@ -107,20 +108,29 @@
                   </svg>
             </div>
             <div class="hidden gap-[2px] color-picker bg-white border-[3px] border-black 
-            p-1 absolute right-3 bottom-14 shadow-[3px_3px] grid-rows-2 w-[38px]">
+            p-1 absolute right-3 bottom-14 box-shadow-2 grid-rows-2 w-[38px]">
+                <!-- White -->
+                <div class="p-[2px] bg-white border-[3px] border-black">
+                    <input type="radio" id="white" name="color" 
+                    value="white" checked
+                    data-shadow="black" class="opacity-0 fixed"/>
+                    <label for="white" class="px-[8px]"></label>
+                </div>
                 <!-- pink-300 -->
-                <div class="p-[2px] bg-pink-300">
-                    <input type="radio" id="kraken" name="monster" 
+                <!-- pink 600 -->
+                <div class="p-[2px] bg-pink-300 border-[3px] border-black">
+                    <input type="radio" id="pink" name="color" 
                     value="#f9a8d4" 
                     data-shadow="#db2777" class="opacity-0 fixed"/>
-                    <label for="kraken" class="px-[9px]"></label>
+                    <label for="pink" class="px-[8px]"></label>
                 </div>
                 <!-- sky-300 -->
-                <div class="p-[2px] bg-sky-300">
-                    <input type="radio" id="sasquatch" name="monster" 
+                <!-- sky-600 -->
+                <div class="p-[2px] bg-sky-300 border-[3px] border-black">
+                    <input type="radio" id="sky" name="color" 
                     value="#7dd3fc "
                     data-shadow="#0284c7" class="opacity-0 fixed"/>
-                    <label for="sasquatch" class="px-[9px]"></label>
+                    <label for="sky" class="px-[8px]"></label>
                 </div>
             </div>
     </div>

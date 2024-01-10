@@ -1,9 +1,15 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-.box-shadow{
+.box-shadow-1{
     box-shadow: 6px 6px;
 }
-.box-shadow-hover{
-    box-shadow: 1px 1px;
+.box-shadow-2{
+    box-shadow: 3px 3px;
+}
+.border-nav{
+    border-color: black;
+}
+.logo-bg-color{
+    background-color: white;
 }
