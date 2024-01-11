@@ -1,6 +1,28 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.card{
+    @apply border-[3px] border-black bg-white
+    }
+.social-card{
+    @apply grid grid-cols-[1fr,2fr] text-sm md:text-lg 
+}
+
+.container-hey{
+    @apply absolute
+    top-[-20px] left-[-20px]
+    md:top-[-28px] md:left-[-30px] border-[3px] 
+    bg-white border-black underline-offset-2 
+    decoration-2 underline flex font-bold items-center px-2 md:px-4
+}
+
+.container-char{
+    @apply absolute bottom-[-12px] 
+                right-[-10px] border-[3px] border-black px-1 py-[2px] 
+                bg-violet-900
+}
+
 .box-shadow-1{
     box-shadow: 6px 6px;
 }
