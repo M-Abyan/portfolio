@@ -1,0 +1,81 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <!--Google Font-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playpen+Sans:wght@500;600;700;800&display=swap" rel="stylesheet">
+    <!--Google Font-->
+    <link href="dist/output.css" rel="stylesheet">
+</head>
+<body class="font-primary">
+    <div class="md:px-20 lg:px-64 fixed w-full flex justify-between
+    border-b-[3px] border-nav bg-white">
+        <div class="logo-bg-color border-r-[3px] border-nav 
+        md:border-x-[3px] flex px-2 items-center ">Yan</div>
+        <div class="p-2">
+            <div>
+                <a href="index.html">Home</a>
+                <a href="about.html">About</a>
+                <a href="porjects.html">Projects</a>
+            </div>
+        </div>
+    </div>
+    <div class="flex flex-col items-center gap-16 justify-center h-dvh text-center">
+        <div class="flex flex-col items-stretch w-[80%] lg:w-[60%] 
+        xl:w-1/2 justify-centers gap-10">
+            
+        <div>
+    </div>
+
+        
+            <div class="absolute bottom-3 
+                right-3 color-toggle p-1 border-[3px] 
+                border-black box-shadow-2 bg-white">
+                <svg xmlns="http://www.w3.org/2000/svg" 
+                class="icon icon-tabler icon-tabler-tools" 
+                width="24" height="24" viewBox="0 0 24 24" 
+                stroke-width="1.5" stroke="#000000" fill="none" 
+                stroke-linecap="round" stroke-linejoin="round">
+                    <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                    <path d="M3 21h4l13 -13a1.5 1.5 0 0 0 -4 -4l-13 13v4" />
+                    <path d="M14.5 5.5l4 4" />
+                    <path d="M12 8l-5 -5l-4 4l5 5" />
+                    <path d="M7 8l-1.5 1.5" />
+                    <path d="M16 12l5 5l-4 4l-5 -5" />
+                    <path d="M16 17l-1.5 1.5" />
+                </svg>
+            </div>
+            <div class="hidden gap-[2px] color-picker bg-white border-[3px] border-black 
+            p-1 absolute right-3 bottom-14 box-shadow-2 grid-rows-2 w-[38px]">
+                <!-- White -->
+                <div class="h-[28px] w-full bg-white border-[3px] border-black">
+                    <input type="radio" id="white" name="color" 
+                    value="white" checked
+                    data-shadow="black" class="opacity-0 fixed"/>
+                    <label for="white" class="px-2"></label>
+                </div>
+                <!-- pink-300 -->
+                <!-- pink 600 -->
+                <div class="h-[28px] w-full bg-pink-300 border-[3px] border-black">
+                    <input type="radio" id="pink" name="color" 
+                    value="#f9a8d4" 
+                    data-shadow="#db2777" class="opacity-0 fixed"/>
+                    <label for="pink" class="px-2"></label>
+                </div>
+                <!-- sky-300 -->
+                <!-- sky-600 -->
+                <div class="h-[28px] w-full bg-sky-300 border-[3px] border-black">
+                    <input type="radio" id="sky" name="color" 
+                    value="#7dd3fc "
+                    data-shadow="#0284c7" class="opacity-0 fixed"/>
+                    <label for="sky" class="px-2"></label>
+                </div>
+            </div>
+    </div>
+    <script src="src/script.js"></script>
+</body>
+</html>

@@ -15,7 +15,7 @@ colorToggle.addEventListener('click', function () {
 
 color.forEach(e => {
     e.addEventListener('change', function (e) {
-        console.log(e.target.value)
+        // console.log(e.target.value)
         changeBoxShadow(e.target.getAttribute('data-shadow'))
         body.style.backgroundColor = this.value;
         logoBgColor.style.backgroundColor = this.value;
