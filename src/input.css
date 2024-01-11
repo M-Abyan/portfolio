@@ -2,6 +2,10 @@
 @tailwind components;
 @tailwind utilities;
 
+@apply base{
+
+
+
 .card{
     @apply border-[3px] border-black bg-white
     }
@@ -23,6 +27,7 @@
                 bg-violet-900
 }
 
+}
 .box-shadow-1{
     box-shadow: 6px 6px;
 }
